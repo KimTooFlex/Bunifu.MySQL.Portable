@@ -1,0 +1,11 @@
+C:\Users\KIM TOO FLEX\source\repos\MySQL.Portable\MySQL.Portable\bin\Debug\MySQL.Portable.dll
+C:\Users\KIM TOO FLEX\source\repos\MySQL.Portable\MySQL.Portable\bin\Debug\MySQL.Portable.pdb
+C:\Users\KIM TOO FLEX\source\repos\MySQL.Portable\MySQL.Portable\obj\Debug\MySQL.Portable.csproj.CoreCompileInputs.cache
+C:\Users\KIM TOO FLEX\source\repos\MySQL.Portable\MySQL.Portable\obj\Debug\MySQL.Portable.dll
+C:\Users\KIM TOO FLEX\source\repos\MySQL.Portable\MySQL.Portable\obj\Debug\MySQL.Portable.pdb
+C:\source\repos\MySQL.Portable\MySQL.Portable\bin\Debug\MySQL.Portable.dll
+C:\source\repos\MySQL.Portable\MySQL.Portable\bin\Debug\MySQL.Portable.pdb
+C:\source\repos\MySQL.Portable\MySQL.Portable\obj\Debug\MySQL.Portable.csproj.CoreCompileInputs.cache
+C:\source\repos\MySQL.Portable\MySQL.Portable\obj\Debug\MySQL.Portable.dll
+C:\source\repos\MySQL.Portable\MySQL.Portable\obj\Debug\MySQL.Portable.pdb
+C:\source\repos\MySQL.Portable\MySQL.Portable\obj\Debug\MySQL.Portable.csprojAssemblyReference.cache

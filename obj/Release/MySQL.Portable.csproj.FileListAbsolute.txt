@@ -1,0 +1,5 @@
+C:\source\repos\MySQL.Portable\MySQL.Portable\bin\Release\MySQL.Portable.dll
+C:\source\repos\MySQL.Portable\MySQL.Portable\bin\Release\MySQL.Portable.pdb
+C:\source\repos\MySQL.Portable\MySQL.Portable\obj\Release\MySQL.Portable.csproj.CoreCompileInputs.cache
+C:\source\repos\MySQL.Portable\MySQL.Portable\obj\Release\MySQL.Portable.dll
+C:\source\repos\MySQL.Portable\MySQL.Portable\obj\Release\MySQL.Portable.pdb

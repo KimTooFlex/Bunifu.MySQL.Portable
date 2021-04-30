@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C595F65-9E96-41CD-AAA4-4B8E413394E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MySQL.Portable</RootNamespace>
+    <AssemblyName>MySQL.Portable</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Service.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MySQL\data\mysql\columns_priv.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\columns_priv.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\columns_priv.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\db.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\db.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\db.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\event.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\event.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\event.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\func.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\func.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\func.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\general_log.CSM" />
+    <EmbeddedResource Include="MySQL\data\mysql\general_log.CSV" />
+    <EmbeddedResource Include="MySQL\data\mysql\general_log.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_category.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_category.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_category.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_keyword.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_keyword.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_keyword.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_relation.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_relation.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_relation.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_topic.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_topic.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\help_topic.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\host.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\host.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\host.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\ndb_binlog_index.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\ndb_binlog_index.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\ndb_binlog_index.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\plugin.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\plugin.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\plugin.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\proc.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\proc.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\proc.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\procs_priv.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\procs_priv.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\procs_priv.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\proxies_priv.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\proxies_priv.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\proxies_priv.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\servers.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\servers.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\servers.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\slow_log.CSM" />
+    <EmbeddedResource Include="MySQL\data\mysql\slow_log.CSV" />
+    <EmbeddedResource Include="MySQL\data\mysql\slow_log.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\tables_priv.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\tables_priv.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\tables_priv.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_leap_second.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_leap_second.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_leap_second.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_name.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_name.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_name.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_transition.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_transition.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_transition.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_transition_type.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_transition_type.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\time_zone_transition_type.MYI" />
+    <EmbeddedResource Include="MySQL\data\mysql\user.frm" />
+    <EmbeddedResource Include="MySQL\data\mysql\user.MYD" />
+    <EmbeddedResource Include="MySQL\data\mysql\user.MYI" />
+    <EmbeddedResource Include="MySQL\data\risc-1.err" />
+    <EmbeddedResource Include="MySQL\data\risc-1.pid" />
+    <EmbeddedResource Include="MySQL\my.ini" />
+    <EmbeddedResource Include="MySQL\share\charsets\README" />
+    <EmbeddedResource Include="MySQL\share\english\errmsg.sys" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MySQL\share\charsets\armscii8.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\ascii.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\cp1250.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\cp1251.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\cp1256.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\cp1257.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\cp850.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\cp852.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\cp866.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\dec8.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\geostd8.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\greek.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\hebrew.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\hp8.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\Index.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\keybcs2.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\koi8r.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\koi8u.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\latin1.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\latin2.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\latin5.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\latin7.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\macce.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\macroman.xml" />
+    <EmbeddedResource Include="MySQL\share\charsets\swe7.xml" />
+    <EmbeddedResource Include="MySQL\bin\mysql.exe" />
+    <EmbeddedResource Include="MySQL\bin\mysqld.exe" />
+    <EmbeddedResource Include="MySQL\start.exe" />
+    <EmbeddedResource Include="MySQL\stop.exe" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
